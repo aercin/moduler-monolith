@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\core-infrastructure\core-infrastructure.csproj" />
+    <ProjectReference Include="..\..\modules\bg-service\messageRelay\messageRelay.csproj" />
+    <ProjectReference Include="..\..\modules\order\api\orderApi.csproj" />
+    <ProjectReference Include="..\..\modules\payment\paymentApi\paymentApi.csproj" />
+    <ProjectReference Include="..\..\modules\stock\api\stockApi.csproj" />
+  </ItemGroup>
+
+</Project>
